@@ -1,0 +1,356 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.c-container {
+  padding: 0 5vw;
+}
+
+.c-txt-lr {
+  font-size: 2rem;
+}
+
+.c-txt-md {
+  font-size: 1.6rem;
+}
+
+.c-txt-sm {
+  font-size: 1.2rem;
+}
+
+.c-txt-xs {
+  font-size: 1rem;
+}
+
+.view-more {
+  text-align: center;
+
+  & span {
+    font-size: 2rem;
+  }
+}
+
+//.header
+.header {
+  height: 100px;
+
+  & .logo__img {
+    margin-top: 22px;
+  }
+
+  & .logo {
+    width: 150px;
+  }
+
+  & .logo-container {
+    display: none;
+  }
+
+  & .pc-container {
+    & .pc-nav-item {
+      padding-top: 3vw;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+// .p-firstview
+.p-firstview {
+  & .swiper-container {
+    height: 87vh;
+  }
+}
+
+//.p-concept
+.p-concept {
+  padding: 10vw 0 20vw 0;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__img {
+    width: 48%;
+    margin: 0;
+  }
+
+  &__desc {
+    width: 48%;
+  }
+}
+
+//.p-features
+.p-features {
+  padding-top: 5vw;
+
+  &__title {
+    text-align: right;
+    margin-bottom: -3vw;
+    margin-right: 11vw;
+  }
+
+  &__main {
+    margin-bottom: 0;
+  }
+
+  &__text-label {
+    display: none;
+  }
+
+  & .item02 {
+    padding-right: 0;
+    padding-left: 50vw;
+    margin-top: -40vw;
+
+    & .p-features__img {
+      width: 90%;
+    }
+
+    & .p-features__desc {
+      width: 80%;
+    }
+  }
+
+  & .item03 {
+    margin-top: -15vw;
+  }
+
+  & .item04 {
+    padding-right: 0;
+    padding-left: 50vw;
+    margin-top: -40vw;
+
+    & .p-features__img {
+      width: 90%;
+    }
+
+    & .p-features__desc {
+      width: 80%;
+    }
+  }
+
+  &__img {
+    width: 52%;
+  }
+
+  &__desc {
+    margin: -10vw 0 0 8vw;
+    width: 45%;
+
+    &-title {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//.menu
+.p-menu {
+  &__label {
+    font-size: 1.6rem;
+  }
+
+  &__table {
+    font-size: 1.2rem;
+  }
+}
+
+//.p-staff
+.p-staff {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    width: 30%;
+  }
+
+  &__img {
+    width: 100%;
+    height: 360px;
+  }
+
+  &__desc {
+    width: 100%;
+    padding: 2vw;
+    margin: -3vw 0;
+  }
+
+  &__name {
+    &__ja {
+      font-size: 1.4rem;
+    }
+
+    &__en {
+      font-size: 1rem;
+    }
+  }
+}
+
+//.p-asides
+.p-asides {
+  padding: 0 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+//.p-recruit
+.p-recruit {
+  &__subtitle {
+    font-size: 1.5rem;
+    padding-bottom: 4vw;
+  }
+}
+
+//.p-footer 
+.p-footer {
+  &__sns {
+    & .sns-link {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 30px;
+
+      & i {
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  &__logo-img {
+    width: 150px;
+  }
+
+  &__copyright {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+}
+
+//p-news 
+.p-news {
+  &__link {
+    padding: 5vw 5vw;
+  }
+}
+
+//* * * * * * staff-page * * * * * * *
+.c-staff {
+  padding: 5vw 0 0 0;
+
+  &__title {
+    & p {
+      margin-top: 7vw;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__name {
+    font-size: 1.2rem;
+  }
+
+  &__item {
+    width: 28%;
+    margin-bottom: 5vw;
+  }
+
+  &__desc {
+    font-size: 1.1rem;
+  }
+}
+
+//* * * * * * recruite-page * * * * * * *
+.c-recruite {
+  padding: 10vw 0;
+
+  &__title {
+    & p {
+      font-size: .9rem;
+    }
+  }
+
+  &__list {
+    margin-top: 5vw;
+  }
+
+  &__item {
+    font-size: 1rem;
+  }
+
+  &__btn {
+    display: none;
+  }
+}
+
+//* * * * * * news-page * * * * * * *
+
+.c-news {
+
+  &__title {
+    margin-bottom: 6vw;
+
+    & span {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__list {
+    padding-bottom: 0;
+
+    & a {
+      padding: 4vw 0 4vw 5vw;
+    }
+  }
+
+  &__link {
+    & .c-txt-sm {
+      font-size: 1.5rem;
+    }
+  }
+
+  & .page-numbers {
+    margin: 8vw 0;
+  }
+}
+
+//* * * * * * news-sl-page * * * * * * *
+.c-news-sl {
+  padding: 10vw 0 0 0;
+
+  & .c-container {
+    padding: 0 12vw;
+  }
+
+  &__tit {
+    & p {
+      font-size: 1.5rem;
+    }
+
+    & span {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__list {
+    padding: 20vw 0 6vw 0;
+  }
+
+  &__contents {
+    padding: 10vw 0;
+
+    & p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link {
+    font-size: 1.4rem;
+  }
+}
