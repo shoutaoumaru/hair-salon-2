@@ -50,7 +50,12 @@ Stylesheet: 600px以上のモニタで適用
   height: 70px;
 
   & .logo {
+    height: 53px;
     width: 120px;
+  }
+
+  & .sp-navbtn {
+    display: none;
   }
 }
 

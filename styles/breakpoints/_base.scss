@@ -93,19 +93,29 @@ img {
 }
 
 .icon-tel {
-  position: relative;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-image: url(/images/common/tel-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 12px;
+  width: 12px;
+}
 
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/tel-white.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
+.icon-net {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  right: 0;
+  background-image: url(/images/common/icon-link-1-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 13px;
+  width: 13px;
 }
 
 .icon-map {
@@ -115,22 +125,6 @@ img {
     content: '';
     display: block;
     background-image: url(/images/common/ico-map-white.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 17px;
-    width: 17px;
-  }
-
-}
-
-.icon-net {
-  position: relative;
-
-  &::before {
-    content: '';
-    display: block;
-    background-image: url(/images/common/icon-net-white.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
