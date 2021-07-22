@@ -168,6 +168,67 @@
     font-size: 1.2rem;
   }
 
+  .reserve-btn-wrap {
+    & h4 {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .reserve-btn {
+      border: 1px solid $cWhite;
+      display: inline-block;
+      margin-bottom: 25px;
+      width: 172px;
+
+      & span {
+        position: relative;
+        display: block;
+        text-align: center;
+        padding: 10px 20px 10px 10px;
+        font-size: 12px;
+      }
+    }
+
+    .reserve-btn-net {
+      & span {
+        position: relative;
+        letter-spacing: 2px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 12px;
+          right: 5px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/icon-link-1-white.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+
+    .reserve-btn-tel {
+      & span {
+        letter-spacing: 4px;
+
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          top: 13px;
+          right: 10px;
+          height: 12px;
+          width: 12px;
+          background-image: url(/images/common/tel-white.png);
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+
   @media (min-width:600px) {
     &__item {
       margin-bottom: 55px;
@@ -175,26 +236,28 @@
       font-size: 1.4rem;
     }
 
-    & address {
-      font-size: 1.4rem;
-    }
-  }
+    .reserve-btn-wrap {
+      padding-left: 10vw;
 
-  .mobile__info__column {
-    position: relative;
-    width: calc(100% - 50px);
-    margin: 0 auto;
-    border-top: 1px solid #fff;
-    padding: 24px 0;
-    font-size: 14px;
+      h4 {
+        font-size: 18px;
+      }
 
-    & dd {
-      margin-bottom: 16px;
-    }
+      .reserve-btn {
+        width: 240px;
 
-    & dd>span {
-      display: block;
-      margin-bottom: 5px;
+        & span {
+          padding: 15px 30px 15px 20px;
+          font-size: 16px;
+
+          &::after {
+            top: 16px;
+            right: 12px;
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
     }
   }
 }
