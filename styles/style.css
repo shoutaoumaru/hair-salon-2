@@ -1261,6 +1261,25 @@ img {
   font-size: .5rem;
 }
 
+.sns-link span {
+  position: relative;
+  padding-left: 30px;
+  font-size: 16px;
+}
+
+.sns-link span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: inline-block;
+  background-color: #fff;
+  background-image: url(/images/common/icon-insta-gr.png);
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+}
+
 .c-recruit {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -2812,6 +2831,15 @@ Stylesheet: 600px以上のモニタで適用
     margin-bottom: 30px;
     font-size: .8rem;
   }
+  .c-staff .sns-link span {
+    font-size: 25px;
+  }
+  .c-staff .sns-link span::before {
+    height: 24px;
+    width: 24px;
+    top: 0px;
+    right: 10px;
+  }
   .c-news-sl .c-container {
     padding: 0 10vw;
   }
@@ -3033,6 +3061,15 @@ Stylesheet: 960px以上のモニタで適用
   }
   .c-staff__desc {
     font-size: 1.1rem;
+  }
+  .c-staff .sns-link span {
+    font-size: 30px;
+  }
+  .c-staff .sns-link span::before {
+    height: 25px;
+    width: 25px;
+    top: 0px;
+    right: 10px;
   }
   .c-recruite {
     padding: 10vw 0;
