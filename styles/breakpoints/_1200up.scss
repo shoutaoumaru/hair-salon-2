@@ -87,6 +87,18 @@ Stylesheet: 1200px以上のモニタで適用
   &__list {
     margin-top: 7vw;
   }
+
+  .sns-link {
+    & span {
+      font-size: 30px;
+      &::before {
+        height: 25px;
+        width: 25px;
+        top: 0px;
+        right: 10px;
+      }
+    }
+  }
 }
 
 //* * * * * * recruit-page * * * * * * *

@@ -3187,6 +3187,15 @@ Stylesheet: 1200px以上のモニタで適用
   .c-staff__list {
     margin-top: 7vw;
   }
+  .c-staff .sns-link span {
+    font-size: 30px;
+  }
+  .c-staff .sns-link span::before {
+    height: 25px;
+    width: 25px;
+    top: 0px;
+    right: 10px;
+  }
   .c-recruit {
     padding: 3vw 0 5vw 0;
   }
