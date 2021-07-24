@@ -2726,7 +2726,7 @@ Stylesheet: 600px以上のモニタで適用
     position: absolute;
     top: 12px;
     left: 0;
-    content: '';
+    content: "";
     display: inline-block;
     height: 1px;
     width: 20vw;
@@ -2740,6 +2740,9 @@ Stylesheet: 600px以上のモニタで適用
   }
   .p-menu__block {
     width: 45%;
+  }
+  .p-menu__table {
+    font-size: 16px;
   }
   .p-staff__img {
     width: 60%;
@@ -2800,10 +2803,10 @@ Stylesheet: 600px以上のモニタで適用
     padding: 10vw 0 5vw 0;
   }
   .c-recruit__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruit__list {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruit__subtitle {
     font-size: 1rem;
@@ -2818,7 +2821,7 @@ Stylesheet: 600px以上のモニタで適用
     padding: 5vw 0 5vw 0;
   }
   .c-staff__title p {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .c-staff__img {
     height: 250px;
@@ -2829,7 +2832,7 @@ Stylesheet: 600px以上のモニタで適用
   }
   .c-staff__desc {
     margin-bottom: 30px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .c-staff .sns-link span {
     font-size: 25px;
@@ -3013,13 +3016,23 @@ Stylesheet: 960px以上のモニタで適用
     font-size: 1rem;
   }
   .p-asides {
+    margin: 0 auto;
     padding: 0 4vw;
+    display: block;
+  }
+  .p-asides-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .p-asides__block {
+    height: 200px;
+  }
+  .p-asides__link {
+    border-right: 1px solid #161616;
   }
   .p-recruit__subtitle {
     font-size: 1.5rem;
@@ -3075,7 +3088,7 @@ Stylesheet: 960px以上のモニタで適用
     padding: 10vw 0;
   }
   .c-recruite__title p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .c-recruite__list {
     margin-top: 5vw;

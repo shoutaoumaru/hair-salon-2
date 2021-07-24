@@ -82,7 +82,7 @@ Stylesheet: 600px以上のモニタで適用
         position: absolute;
         top: 12px;
         left: 0;
-        content: '';
+        content: "";
         display: inline-block;
         height: 1px;
         width: 20vw;
@@ -101,10 +101,13 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-menu 
+//.p-menu
 .p-menu {
   &__block {
     width: 45%;
+  }
+  &__table {
+    font-size: 16px;
   }
 }
 
@@ -139,7 +142,7 @@ Stylesheet: 600px以上のモニタで適用
   }
 }
 
-//.p-access 
+//.p-access
 .p-access {
   &__map {
     & span {
@@ -192,12 +195,12 @@ Stylesheet: 600px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 
   &__list {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   &__subtitle {
@@ -219,7 +222,7 @@ Stylesheet: 600px以上のモニタで適用
 
   &__title {
     & p {
-      font-size: .8rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -234,7 +237,7 @@ Stylesheet: 600px以上のモニタで適用
 
   &__desc {
     margin-bottom: 30px;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   .sns-link {
     & span {
@@ -248,7 +251,6 @@ Stylesheet: 600px以上のモニタで適用
     }
   }
 }
-
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
