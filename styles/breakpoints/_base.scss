@@ -1,7 +1,7 @@
 //setting
 body {
   margin: 0;
-  font-family: 'Newsreader', serif;
+  font-family: "Newsreader", serif;
 }
 
 .superwrapper {
@@ -39,7 +39,7 @@ img {
 }
 
 .c-txt-md {
-  font-size: .9rem;
+  font-size: 0.9rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cWhite;
@@ -47,14 +47,14 @@ img {
 }
 
 .c-txt-sm {
-  font-size: .7rem;
+  font-size: 0.7rem;
   letter-spacing: 3px;
   line-height: 2;
   color: $cWhite;
 }
 
 .c-txt-xs {
-  font-size: .5rem;
+  font-size: 0.5rem;
   letter-spacing: 2px;
   line-height: 2;
   color: $cSubBlack;
@@ -72,7 +72,7 @@ img {
     position: absolute;
     top: 18px;
     left: 0;
-    content: '';
+    content: "";
     display: inline-block;
     width: 7vw;
     height: 1px;
@@ -122,7 +122,7 @@ img {
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     display: block;
     background-image: url(/images/common/ico-map-white.png);
     background-position: center;
@@ -131,7 +131,6 @@ img {
     height: 17px;
     width: 17px;
   }
-
 }
 
 .icon-insta {
@@ -142,7 +141,7 @@ img {
   padding-bottom: 5px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -155,7 +154,6 @@ img {
   }
 }
 
-
 //header
 .header {
   height: 60px;
@@ -166,7 +164,7 @@ img {
   margin: 0 4.5vw 18vw 4.5vw;
 
   & .swiper-container {
-    @media (max-width:1199px) {
+    @media (max-width: 1199px) {
       .view-pc {
         display: none;
       }
@@ -231,13 +229,10 @@ img {
     width: 120%;
     background-color: #727171;
     box-shadow: 20px 25px 45px rgb(87, 87, 87);
-    ;
-
     &-title {
       padding: 10px 0;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
-
   }
 
   &__img {
@@ -251,8 +246,7 @@ img {
   padding-bottom: 100px;
 
   &__image {
-
-    &>img {
+    & > img {
       object-fit: cover;
     }
   }
@@ -260,7 +254,6 @@ img {
 
 // menu
 .p-menu {
-
   &__title {
     margin-bottom: 50px;
     text-align: center;
@@ -293,7 +286,6 @@ img {
 
 // staff
 .p-staff {
-
   &__img {
     width: 80%;
     height: 300px;
@@ -309,9 +301,8 @@ img {
     letter-spacing: 3px;
 
     &__en {
-      font-size: .7rem;
+      font-size: 0.7rem;
     }
-
   }
 
   &__title {
@@ -333,11 +324,9 @@ img {
     z-index: 100;
     background-color: #727171;
     box-shadow: 20px 25px 45px rgb(87, 87, 87);
-    ;
-
     &-title {
       padding: 10px 0;
-      font-size: .9rem;
+      font-size: 0.9rem;
     }
   }
 }
@@ -354,7 +343,7 @@ img {
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 48px;
       height: 1px;
@@ -392,7 +381,7 @@ img {
       position: relative;
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         height: 18px;
         width: 18px;
@@ -432,7 +421,7 @@ img {
     overflow: hidden;
 
     &::after {
-      content: '';
+      content: "";
       display: block;
       width: 40px;
       height: 40px;
@@ -517,7 +506,7 @@ img {
     display: block;
     padding: 5vw 0;
     border-bottom: 1px solid rgb(235, 235, 235);
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & p {
       margin-top: 2vw;
@@ -535,7 +524,6 @@ img {
     text-align: right;
     letter-spacing: 2px;
   }
-
 }
 
 // footer
@@ -581,7 +569,6 @@ img {
   }
 
   & .sns-insta {
-
     & i {
       position: absolute;
       top: 0;
@@ -599,7 +586,6 @@ img {
   }
 
   & .sns-fb {
-
     & i {
       position: absolute;
       top: 0;
@@ -617,8 +603,7 @@ img {
   }
 }
 
-
-//* * * * * * * * * staff-page * * * * * * * * * * 
+//* * * * * * * * * staff-page * * * * * * * * * *
 .c-staff {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -635,10 +620,9 @@ img {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__list {
@@ -649,6 +633,8 @@ img {
   }
 
   &__item {
+    position: relative;
+    margin-bottom: 20px;
     width: 45%;
   }
 
@@ -659,19 +645,25 @@ img {
   &__name {
     margin: 10px 0;
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
     margin: 10px 0 20px 0;
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 .sns-link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: auto;
+
   & span {
     position: relative;
-    padding-left: 30px;
-    font-size: 16px;
+    padding-left: 15px;
+    font-size: 0.7rem;
     &::before {
       position: absolute;
       top: 0;
@@ -681,14 +673,14 @@ img {
       background-color: #fff;
       background-image: url(/images/common/icon-insta-gr.png);
       background-size: contain;
-      height: 20px;
-      width: 20px;
+      background-repeat: no-repeat;
+      height: 0.7rem;
+      width: 0.7rem;
     }
   }
 }
 
-
-//* * * * * * * * * recruit-page * * * * * * * * * * 
+//* * * * * * * * * recruit-page * * * * * * * * * *
 .c-recruit {
   padding: 15vw 0;
   letter-spacing: 3px;
@@ -705,15 +697,14 @@ img {
 
     & p {
       margin-top: 10vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
       line-height: 2;
     }
-
   }
 
   &__list {
     margin-top: 10vw;
-    font-size: .6rem;
+    font-size: 0.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -723,7 +714,7 @@ img {
     text-align: right;
     letter-spacing: 2px;
     line-height: 1.5;
-    font-size: .7rem;
+    font-size: 0.7rem;
     margin-top: 30px;
 
     & span {
@@ -733,7 +724,7 @@ img {
       border-bottom: 1px solid rgb(148, 148, 148);
 
       &::before {
-        content: '';
+        content: "";
         display: inline-block;
         position: absolute;
         top: 0;
@@ -750,15 +741,15 @@ img {
 
   &__name {
     text-align: center;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   &__desc {
-    font-size: .5rem;
+    font-size: 0.5rem;
   }
 }
 
-//* * * * * * news-page * * * * * * * 
+//* * * * * * news-page * * * * * * *
 .c-news {
   padding: 20vw 0 10vw 0;
   letter-spacing: 3px;
@@ -768,10 +759,9 @@ img {
     padding: 4vw 0;
     border-bottom: 1px solid rgb(235, 235, 235);
 
-
     & p {
       margin-top: 2vw;
-      font-size: .5rem;
+      font-size: 0.5rem;
     }
 
     & span {
@@ -788,7 +778,6 @@ img {
   &__item {
     &:first-of-type {
       border-top: 1px solid rgb(235, 235, 235);
-
     }
   }
 
@@ -812,7 +801,7 @@ img {
       width: 8vw;
       height: 8vw;
       border-radius: 100%;
-      border: 1px solid #C4CCD1;
+      border: 1px solid #c4ccd1;
       background: #fff;
       margin: 0 1.3vw;
     }
@@ -839,13 +828,13 @@ img {
       }
     }
 
-    @media (max-width:767px) {
+    @media (max-width: 767px) {
       & .next {
         display: none;
       }
     }
 
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 40px;
         height: 40px;
@@ -856,7 +845,7 @@ img {
       }
     }
 
-    @media (min-width:960px) {
+    @media (min-width: 960px) {
       & .page-numbers:not(.next):not(.prev) {
         width: 60px;
         height: 60px;
@@ -878,7 +867,7 @@ img {
 
   &__contents {
     line-height: 2;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
 
   &__title {
@@ -893,14 +882,13 @@ img {
   }
 }
 
-//* * * * * * news-single-page * * * * * * * 
+//* * * * * * news-single-page * * * * * * *
 .c-news-sl {
   padding: 10vw 0;
 
   & .c-container {
     padding: 5vw 5vw 0 5vw;
   }
-
 
   &__list {
     padding: 15vw 0 0 0;
@@ -911,14 +899,14 @@ img {
     line-height: 2.5;
 
     & p {
-      font-size: .5rem;
+      font-size: 0.5rem;
     }
   }
 
   &__link {
     margin: 0 0 10vw 0;
     text-align: right;
-    font-size: .8rem;
+    font-size: 0.8rem;
 
     & a {
       display: inline-block;
