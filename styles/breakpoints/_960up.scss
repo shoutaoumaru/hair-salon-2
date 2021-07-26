@@ -198,13 +198,16 @@ Stylesheet: 960px以上のモニタで適用
   margin: 0 auto;
   padding: 0 4vw;
   display: block;
+
   &-wrap {
     display: flex;
     justify-content: space-between;
   }
+
   &__block {
     height: 200px;
   }
+
   &__link {
     border-right: 1px solid $cBlack;
   }
@@ -212,6 +215,8 @@ Stylesheet: 960px以上のモニタで適用
 
 //.p-recruit
 .p-recruit {
+  padding: 10vw 0;
+
   &__subtitle {
     font-size: 1.5rem;
     padding-bottom: 4vw;
@@ -278,6 +283,7 @@ Stylesheet: 960px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 30px;
+
       &::before {
         height: 1rem;
         width: 1rem;

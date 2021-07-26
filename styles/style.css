@@ -3047,6 +3047,9 @@ Stylesheet: 960px以上のモニタで適用
   .p-asides__link {
     border-right: 1px solid #161616;
   }
+  .p-recruit {
+    padding: 10vw 0;
+  }
   .p-recruit__subtitle {
     font-size: 1.5rem;
     padding-bottom: 4vw;
