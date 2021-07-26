@@ -18,7 +18,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//p-firstview 
+//p-firstview
 .p-firstview {
   margin: 0 10vw 13vw 10vw;
 
@@ -31,7 +31,7 @@ Stylesheet: 1200px以上のモニタで適用
   }
 }
 
-//.p-asides 
+//.p-asides
 .p-asides {
   &__block {
     height: 170px;
@@ -50,7 +50,7 @@ Stylesheet: 1200px以上のモニタで適用
   padding: 10vw 0;
 }
 
-//.p-news 
+//.p-news
 .p-news {
   padding: 0 7vw;
 
@@ -86,6 +86,18 @@ Stylesheet: 1200px以上のモニタで適用
 
   &__list {
     margin-top: 7vw;
+  }
+
+  .sns-link {
+    & span {
+      font-size: 1.2rem;
+      &::before {
+        height: 1.2rem;
+        width: 1.2rem;
+        top: 0px;
+        right: 10px;
+      }
+    }
   }
 }
 
