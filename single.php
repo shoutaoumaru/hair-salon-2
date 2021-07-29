@@ -2,20 +2,12 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>美容師テンプレート4/NEWS/single</title>
-  <link rel="stylesheet" href="../styles/vendor/bootstrap-reboot.css">
-  <link rel="stylesheet" href="../styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap" rel="stylesheet" />
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/style.css">
+  <?php get_header(); ?>
 </head>
 
 <body>
   <div class="superwrapper animsition">
+
     <!-- .header -->
     <header id="header" class="header">
       <div class="logo-container">
@@ -54,13 +46,13 @@
               <a class="pc-nav-link animsition-link" href="/"><span>Top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>Staff</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>Recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>Recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>News</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -71,33 +63,28 @@
       </div>
       <!-- /.pc-container -->
     </header>
+
     <section class="c-news-sl">
       <div class="c-container">
         <ul class="c-news-sl__list">
           <li class="c-news-sl__block">
             <div class="c-news-sl__tit">
-              <p class="c-txt-md">新型コロナウィルス感染予防について。</p>
-              <span class="c-news-sl__date">2021.4.5</span>
+              <p class="c-txt-md"><?php the_title(); ?></p>
+              <span class="c-news-sl__date"><?php the_time('Y.m.d'); ?></span>
             </div>
             <div class="c-news-sl__contents">
-              <p>2021年5月7日（金）より期間限定で、「芳醇フランボワーズチーズタルト」を国内全店舗にて販売いたします。
-
-                チーズムースにフランボワーズのジャムとピューレを配合し、クリームチーズの“コク”とフランボワーズの“甘酸っぱさ”が絶妙にマッチした、オリジナルの「フランボワーズチーズムース」に仕上げました。
-
-                クッキー生地では、フランボワーズのイメージから連想される“レッド”を表現。
-                ほんのりと感じられる「ココア」の風味が「フランボワーズチーズムース」との相性もぴったりです。
-
-              </p>
+              <p><?php the_content('Read more'); ?></p>
             </div>
           </li>
 
         </ul>
         <div class="c-news-sl__link">
-          <a class="more-link animsition-link" href="/news/news.html"><span class="readmore">一覧へ戻る</span></a>
+          <a class="more-link animsition-link" href="/news"><span class="readmore">一覧へ戻る</span></a>
         </div>
       </div>
     </section>
     <!-- /.news-top -->
+
     <footer id="footer" class="p-footer">
       <div class="c-container">
         <div class="p-footer__sns">
@@ -114,7 +101,7 @@
         <div class="p-footer__copyright">&copy;RivRound.inc</div>
       </div>
     </footer>
-    <!-- /.p-footer -->
+    <!-- .p-footer -->
     <div class="mobile-menu">
       <nav class="mobile-menu__nav">
         <ul class="mobile-menu__list">
@@ -122,14 +109,15 @@
             <a class="animsition-link" href="/">Top</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">Staff</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">Staff</a>
+          </li>
+		  <li class="mobile-menu__item">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">News</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/news/news.html">News</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">Recruit</a>
           </li>
-          <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">Recruit</a>
-          </li>
+
         </ul>
         <div class="reserve-btn-wrap">
           <div class="reserve-btn-tel">
@@ -148,13 +136,11 @@
       </nav>
     </div>
     <!------ /.mobile-menu ----->
+
   </div>
   <!-- .superwrapper -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="../scripts/libs/scroll-btn.js"></script>
-  <script src="../scripts/libs/mobile-menu.js"></script>
+
+  <?php get_template_part('includes/c-footer'); ?>
 </body>
 
 </html>

@@ -707,7 +707,7 @@ img {
   position: absolute;
   top: 2px;
   right: 0;
-  background-image: url(/images/common/tel-white.png);
+  background-image: url(../images/common/tel-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -720,7 +720,7 @@ img {
   position: absolute;
   top: 2px;
   right: 0;
-  background-image: url(/images/common/icon-link-1-white.png);
+  background-image: url(../images/common/icon-link-1-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -735,7 +735,7 @@ img {
 .icon-map::before {
   content: "";
   display: block;
-  background-image: url(/images/common/ico-map-white.png);
+  background-image: url(../images/common/ico-map-white.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -756,7 +756,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -997,7 +997,7 @@ img {
   display: inline-block;
   height: 18px;
   width: 18px;
-  background-image: url(/images/common/ico-map-white.png);
+  background-image: url(../images/common/ico-map-white.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -1035,7 +1035,7 @@ img {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(/images/arrow.svg);
+  background-image: url(../images/arrow.svg);
   background-size: contain;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -1142,7 +1142,7 @@ img {
 .p-footer__logo-img {
   width: 100px;
   height: 64px;
-  background-image: url(/images/common/riv_logo_official-wh2.png);
+  background-image: url(../images/common/riv_logo_official-wh2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1187,7 +1187,7 @@ img {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1202,7 +1202,7 @@ img {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-image: url(/images/common/facebook-ico.png);
+  background-image: url(../images/common/facebook-ico.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -1284,7 +1284,7 @@ img {
   content: "";
   display: inline-block;
   background-color: #fff;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(../images/common/icon-insta-gr.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 0.7rem;
@@ -1347,7 +1347,7 @@ img {
   left: 0;
   height: 15px;
   width: 15px;
-  background-image: url(/images/common/icon-tel.png);
+  background-image: url(../images/common/icon-tel.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1437,7 +1437,7 @@ img {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url(/images/common/arrow.png);
+  background-image: url(../images/common/arrow.png);
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1965,7 +1965,7 @@ img {
 }
 
 .bg-img-zoom {
-  background-image: url(images/image-1.jpg);
+  background-image: url(../images/image-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2372,7 +2372,7 @@ img {
 
 .header .logo {
   position: relative;
-  background-image: url(/images/common/riv_logo_official-wh2.png);
+  background-image: url(../images/common/riv_logo_official-wh2.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -2581,7 +2581,7 @@ img {
   right: 5px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/icon-link-1-white.png);
+  background-image: url(../images/common/icon-link-1-white.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -2598,7 +2598,7 @@ img {
   right: 10px;
   height: 12px;
   width: 12px;
-  background-image: url(/images/common/tel-white.png);
+  background-image: url(../images/common/tel-white.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

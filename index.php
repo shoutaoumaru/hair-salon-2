@@ -2,16 +2,7 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>美容師テンプレート2/top</title>
-  <link rel="stylesheet" href="/styles/vendor/logo-animation.min.css">
-  <link rel="stylesheet" href="/styles/vendor/animsition.min.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@300&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles/vendor/bootstrap-reboot.css" />
-  <link rel="stylesheet" href="styles/vendor/swiper.min.css" />
-  <link rel="stylesheet" href="styles/style.css" />
+  <?php get_header(); ?>
 </head>
 
 <body class="animsition">
@@ -128,13 +119,13 @@
               <a class="pc-nav-link animsition-link" href="/"><span>Top</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/staff/staff.html"><span>Staff</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>"><span>Staff</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/recruit/recruit.html"><span>Recruit</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>"><span>Recruit</span></a>
             </li>
             <li class="pc-nav-item">
-              <a class="pc-nav-link animsition-link" href="/news/news.html"><span>News</span></a>
+              <a class="pc-nav-link animsition-link" href="<?php echo esc_url( home_url('/news')); ?>"><span>News</span></a>
             </li>
             <li class="pc-nav-item">
               <a target="_blank" class="pc-nav-link reserve-btn"
@@ -151,16 +142,16 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/style_1@sp.jpg" />
-              <img class="view-pc" src="images/home/style_1@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/style_1@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/cut_3@sp.jpg" />
-              <img class="view-pc" src="images/home/cut_3@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/cut_3@pc.jpg" />
             </div>
             <div class="swiper-slide">
-              <img class="view-sp" src="images/home/store_4@sp.jpg" />
-              <img class="view-pc" src="images/home/store_4@pc.jpg" />
+              <img class="view-sp" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@sp.jpg" />
+              <img class="view-pc" src="<?php echo get_template_directory_uri(); ?>/images/home/store_4@pc.jpg" />
             </div>
           </div>
         </div>
@@ -177,7 +168,7 @@
       <div class="c-container">
         <div class="p-concept-wrap">
           <div class="p-concept__img cover-slide">
-            <img class="parallax-img img-zoom" src="images/home/style_7@pc.jpg" />
+            <img class="parallax-img img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_7@pc.jpg" />
           </div>
           <div class="p-concept__desc appear up">
             <h1 class="p-concept__title clip-js left">
@@ -212,7 +203,7 @@
             <div class="p-features__main item01 item">
               <div class="p-features__text-label"> <span class="c-txt-lr">Technic</span></div>
               <div class="p-features__img">
-                <img src="images/home/cut_1@sp.jpg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/cut_1@sp.jpg" />
               </div>
               <div class="p-features__desc Technic parallax-up">
                 <h3 class="p-features__desc-title">技術</h3>
@@ -226,7 +217,7 @@
             <div class="p-features__main item02 item">
               <div class="p-features__text-label space"> <span class="c-txt-lr">Space</span></div>
               <div class="p-features__img">
-                <img src="images/home/store_2@sp.jpg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/store_2@sp.jpg" />
               </div>
               <div class="p-features__desc space parallax-up">
                 <h3 class="p-features__desc-title">プライベート空間</h3>
@@ -240,7 +231,7 @@
             <div class="p-features__main item03 item">
               <div class="p-features__text-label "> <span class="c-txt-lr">Fancility</span></div>
               <div class="p-features__img">
-                <img src="images/home/headspa@sp.jpg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/headspa@sp.jpg" />
               </div>
               <div class="p-features__desc facility parallax-up">
                 <h3 class="p-features__desc-title">夢シャンプー</h3>
@@ -256,7 +247,7 @@
                 <span class="c-txt-lr">Treatment</span>
               </div>
               <div class="p-features__img">
-                <img src="images/home/treatment.jpg" />
+                <img src="<?php echo get_template_directory_uri(); ?>/images/home/treatment.jpg" />
               </div>
               <div class="p-features__desc parallax-up">
                 <h3 class="p-features__desc-title">トリートメント</h3>
@@ -272,7 +263,7 @@
     <!-- .p-eyecatch -->
     <div class="p-eyecatch">
       <div class="p-eyecatch__image cover-slide">
-        <img class="parallax-img img-zoom" src="images/home/style_5@pc.jpg" />
+        <img class="parallax-img img-zoom" src="<?php echo get_template_directory_uri(); ?>/images/home/style_5@pc.jpg" />
       </div>
     </div>
     <!-- .p-menu -->
@@ -450,7 +441,7 @@
         <div class="p-staff__wrap">
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/biyousshi_mens@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyousshi_mens@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -466,7 +457,7 @@
           </div>
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/biyoushi.lady@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/biyoushi.lady@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -482,7 +473,7 @@
           </div>
           <div class="p-staff__block appear up">
             <div class="p-staff__img item">
-              <img src="images/home/staff_1@sp.jpg" />
+              <img src="<?php echo get_template_directory_uri(); ?>/images/home/staff_1@sp.jpg" />
             </div>
             <div class="p-staff__desc item">
               <h3 class="p-staff__name">
@@ -596,27 +587,18 @@
         </h2>
         <div class="p-news__wrapper appear up">
           <ul class="p-news__list item">
+          <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
             <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">営業時間短縮営業について</p>
+              <a class="p-news__link animsition-link" href="<?php the_permalink(); ?>">
+                <span class="c-txt-sm"><?php echo get_the_date('Y.m.d'); ?></span>
+                <p class="c-txt-sm"><?php the_title(); ?></p>
               </a>
             </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">新型コロナウィルス感染拡大について</p>
-              </a>
-            </li>
-            <li class="p-news__item">
-              <a class="p-news__link animsition-link" href="/news/news-single.html">
-                <span class="c-txt-sm">2021/05/25</span>
-                <p class="c-txt-sm">ホームページリニューアル致しました</p>
-              </a>
-            </li>
+            <?php endwhile; ?>
+            <?php endif; ?>
           </ul>
           <div class="view-more item">
-            <a class="view-more__link animsition-link" href="/news/news.html">
+            <a class="view-more__link animsition-link" href="/news">
               <span>News List</span>
             </a>
           </div>
@@ -647,11 +629,15 @@
             <a class="animsition-link" href="/">Top</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/staff/staff.html">Staff</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/staff')); ?>">Staff</a>
+          </li>
+		  <li class="mobile-menu__item">
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/news')); ?>">News</a>
           </li>
           <li class="mobile-menu__item">
-            <a class="animsition-link" href="/recruit/recruit.html">Recruit</a>
+            <a class="animsition-link" href="<?php echo esc_url( home_url('/recruit')); ?>">Recruit</a>
           </li>
+
         </ul>
         <div class="reserve-btn-wrap">
           <div class="reserve-btn-tel">
@@ -671,19 +657,8 @@
     </div>
     <!------ /.mobile-menu ----->
   </div>
-  <script src="scripts/vendor/pace.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="/scripts/vendor/animsition.min.js"></script>
-  <script src="/scripts/libs/page.js"></script>
-  <script src="scripts/vendor/swiper.min.js"></script>
-  <script src="scripts/vendor/simpleParallax.min.js"></script>
-  <script src="scripts/libs/parallax.js"></script>
-  <script src="scripts/libs/hero-slider.js"></script>
-  <script src="scripts/libs/scroll-btn.js"></script>
-  <script src="scripts/libs/scroll.js"></script>
-  <script src="scripts/libs/mobile-menu.js"></script>
-  <script src="scripts/libs/text-animation.js"></script>
-  <script src="scripts/main.js"></script>
+  <!-- /.p-superwrapper -->
+  <?php get_footer(); ?>
 </body>
 
 </html>
