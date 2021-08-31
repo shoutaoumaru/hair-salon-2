@@ -1226,7 +1226,7 @@ img {
 
 .c-staff__title p {
   margin-top: 10vw;
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   line-height: 2;
 }
 
@@ -1259,8 +1259,8 @@ img {
 }
 
 .c-staff__desc {
-  margin: 10px 0 20px 0;
-  font-size: 0.5rem;
+  margin: 10px 0 30px 0;
+  font-size: 0.7rem;
 }
 
 .sns-link {
@@ -1274,7 +1274,7 @@ img {
 .sns-link span {
   position: relative;
   padding-left: 15px;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .sns-link span::before {
@@ -1283,8 +1283,7 @@ img {
   left: 0;
   content: "";
   display: inline-block;
-  background-color: #fff;
-  background-image: url(/images/common/icon-insta-gr.png);
+  background-image: url(/images/common/icon-insta-white.png);
   background-size: contain;
   background-repeat: no-repeat;
   height: 0.7rem;
