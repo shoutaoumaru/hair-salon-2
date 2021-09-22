@@ -2,7 +2,7 @@
 
   & .logo__img {
     display: inline-block;
-    margin: 10px 10px 0 4.5vw;
+    margin: 0 10px 0 5vw;
   }
 
   & .logo {
@@ -22,7 +22,7 @@
     left: 0;
     background-color: #727171;
     opacity: .9;
-    height: 6.5vh;
+    height: 8vh;
     width: 100%;
     z-index: 2000;
     transition: all.3s;
@@ -73,11 +73,15 @@
     }
   }
 
-  .mobile-button {
+  .mobile-container {
     position: fixed;
-    top: 24px;
-    right: 3.8vw;
+    top: 10px;
+    left: 0;
+    width: 100%;
     z-index: 4000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .mobile-menu__btn {
@@ -85,6 +89,7 @@
     border: none;
     outline: none !important;
     cursor: pointer;
+    padding-right: 5vw;
 
     &>span {
       background-color: $cWhite;
@@ -119,8 +124,12 @@
 
   @media (min-width:960px) {
     .pc-container {
+      position: fixed;
+      top: 0;
+      left: 0;
       display: flex;
       justify-content: space-between;
+      width: 100%;
 
       & .pc-nav-list {
         display: flex;

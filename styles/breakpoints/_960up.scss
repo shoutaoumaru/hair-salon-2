@@ -33,7 +33,6 @@ Stylesheet: 960px以上のモニタで適用
 
 //.header
 .header {
-  height: 100px;
 
   & .logo__img {
     margin-top: 22px;
@@ -57,8 +56,14 @@ Stylesheet: 960px以上のモニタで適用
 
 // .p-firstview
 .p-firstview {
+  margin-top: 10vw;
+
   & .swiper-container {
     height: 87vh;
+  }
+
+  .view-sp {
+    display: none;
   }
 }
 
@@ -349,10 +354,9 @@ Stylesheet: 960px以上のモニタで適用
 
 //* * * * * * news-sl-page * * * * * * *
 .c-news-sl {
-  padding: 10vw 0 0 0;
 
   & .c-container {
-    padding: 0 12vw;
+    padding: 5vw 12vw 0 12vw;
   }
 
   &__tit {
@@ -363,10 +367,6 @@ Stylesheet: 960px以上のモニタで適用
     & span {
       font-size: 1.4rem;
     }
-  }
-
-  &__list {
-    padding: 20vw 0 6vw 0;
   }
 
   &__contents {

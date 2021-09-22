@@ -20,14 +20,10 @@ Stylesheet: 1200px以上のモニタで適用
 
 //p-firstview
 .p-firstview {
-  margin: 0 10vw 13vw 10vw;
+  margin: 8vw 10vw 13vw 10vw;
 
   & .swiper-container {
     height: 78vh;
-
-    .view-sp {
-      display: none;
-    }
   }
 }
 
@@ -76,7 +72,6 @@ Stylesheet: 1200px以上のモニタで適用
 
 //* * * * * * staff-page * * * * * * *
 .c-staff {
-  padding: 0;
 
   &__title {
     & p {
@@ -91,6 +86,7 @@ Stylesheet: 1200px以上のモニタで適用
   .sns-link {
     & span {
       font-size: 1.2rem;
+
       &::before {
         height: 1.2rem;
         width: 1.2rem;
