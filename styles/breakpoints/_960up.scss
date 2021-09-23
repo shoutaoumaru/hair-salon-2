@@ -300,13 +300,20 @@ Stylesheet: 960px以上のモニタで適用
 }
 
 //* * * * * * recruite-page * * * * * * *
-.c-recruite {
-  padding: 10vw 0;
+.c-recruit {
+  padding: 0;
 
   &__title {
+
     & p {
-      font-size: 0.9rem;
+      margin-top: 5vw;
+
+      font-size: 1.2rem;
     }
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
   }
 
   &__list {
@@ -314,7 +321,7 @@ Stylesheet: 960px以上のモニタで適用
   }
 
   &__item {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   &__btn {

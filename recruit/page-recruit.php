@@ -12,24 +12,23 @@
 
 <body>
   <div class="superwrapper animsition">
-    <!-- .header -->
     <header id="header" class="header">
-      <div class="logo-container">
-        <a class="animsition-link" href="/">
-          <div class="logo__img">
-            <div class="logo"></div>
-          </div>
-        </a>
+      <div class="mobile-container">
+        <div class="logo-container">
+          <a class="animsition-link" href="/">
+            <div class="logo__img">
+              <div class="logo"></div>
+            </div>
+          </a>
+        </div>
+        <div class="mobile-button">
+          <button class="mobile-menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
       </div>
-      <!-- .logo__img -->
-      <div class="mobile-button">
-        <button class="mobile-menu__btn">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-      <!-- /.mobile-button -->
       <nav class="sp-navbtn">
         <ul class="sp-navbtn__container">
           <li><a class="tel" href="tel:092-686-7954">電話予約<i class="icon-tel"></i></a></li>
@@ -67,6 +66,11 @@
       </div>
       <!-- /.pc-container -->
     </header>
+    <!-- /.header -->
+    <div class="c-top-view">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/home/counseling__2.jpg" alt="">
+    </div>
+    <!-- /.c-top-view -->
     <!-- main -->
     <main class="c-recruit">
       <div class="c-container">

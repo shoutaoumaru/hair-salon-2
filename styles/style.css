@@ -1302,13 +1302,13 @@ img {
 }
 
 .c-recruit {
-  padding: 15vw 0;
+  padding: 0 0 15vw 0;
   letter-spacing: 3px;
   line-height: 2;
 }
 
 .c-recruit__title span {
-  padding-top: 8vw;
+  padding-top: 5vw;
   text-align: center;
   font-weight: 100;
   font-size: 2rem;
@@ -1316,13 +1316,13 @@ img {
 }
 
 .c-recruit__title p {
-  margin-top: 10vw;
+  margin-top: 5vw;
   font-size: 0.5rem;
   line-height: 2;
 }
 
 .c-recruit__list {
-  margin-top: 10vw;
+  margin-top: 6vw;
   font-size: 0.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3096,19 +3096,23 @@ Stylesheet: 960px以上のモニタで適用
     top: 0px;
     right: 10px;
   }
-  .c-recruite {
-    padding: 10vw 0;
+  .c-recruit {
+    padding: 0;
   }
-  .c-recruite__title p {
-    font-size: 0.9rem;
+  .c-recruit__title p {
+    margin-top: 5vw;
+    font-size: 1.2rem;
   }
-  .c-recruite__list {
+  .c-recruit__subtitle {
+    font-size: 1.4rem;
+  }
+  .c-recruit__list {
     margin-top: 5vw;
   }
-  .c-recruite__item {
-    font-size: 1rem;
+  .c-recruit__item {
+    font-size: 1.2rem;
   }
-  .c-recruite__btn {
+  .c-recruit__btn {
     display: none;
   }
   .c-news__title {
@@ -3209,25 +3213,12 @@ Stylesheet: 1200px以上のモニタで適用
     top: 0px;
     right: 10px;
   }
-  .c-recruit {
-    padding: 3vw 0 5vw 0;
-  }
-  .c-recruit__title p {
-    margin-top: 5vw;
-    font-size: 1.2rem;
-  }
   .c-recruit__list {
     margin-top: 3vw;
     font-size: 1.2rem;
   }
-  .c-recruit__subtitle {
-    font-size: 1.4rem;
-  }
   .c-recruit__item {
     margin: 25px 0;
-  }
-  .c-recruit__btn {
-    font-size: 1.4rem;
   }
   .c-news {
     padding-top: 10vw;

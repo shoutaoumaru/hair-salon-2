@@ -81,7 +81,6 @@
       </svg>
     </div>
     <!-- /.svg-animation -->
-    <!-- .header -->
     <header id="header" class="header">
       <div class="mobile-container">
         <div class="logo-container">
@@ -136,6 +135,7 @@
       </div>
       <!-- /.pc-container -->
     </header>
+    <!-- /.header -->
     <!-- .p-firstview -->
     <section id="firstview" class="p-firstview">
       <div class="hero">
