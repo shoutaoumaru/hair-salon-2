@@ -778,6 +778,50 @@ img {
   }
 }
 
+.insta-link {
+  margin-right: 25px;
+}
+
+.insta-link span {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 15px;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+  color: #fff;
+}
+
+.insta-link span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/common/icon-insta-wh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta-link span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 8px;
+  width: 8px;
+  background-image: url(../images/common/arrow-wh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .p-firstview {
   margin: 20vw 5vw 20vw 5vw;
   overflow: hidden;
@@ -1016,69 +1060,45 @@ img {
   left: 0;
 }
 
-.p-asides {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
-  margin: 80px auto 0;
+.p-instagram__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.p-asides__block {
-  width: 100%;
-  height: 140px;
-  background-color: #fff;
-  border-top: 1px solid #727171;
-  border-left: 0;
+.p-instagram__img a {
+  width: 33%;
 }
 
-.p-asides__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  color: #727171;
-  overflow: hidden;
-}
-
-.p-asides__link::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url(/images/arrow.svg);
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 35px;
-  top: 18px;
-}
-
-.p-asides__label {
-  position: absolute;
-  font-size: 30px;
-  line-height: 40px;
-  left: 30px;
-  top: 20px;
-  z-index: 1;
-}
-
-.p-asides__text {
-  line-height: 20px;
-  position: absolute;
-  left: 30px;
-  font-size: 14px;
-  bottom: 50px;
-  z-index: 1;
-}
-
-.p-asides__domain {
-  position: absolute;
-  bottom: 25px;
-  left: 30px;
-  line-height: 20px;
-  font-size: 10px;
+@media (min-width: 960px) {
+  .p-instagram__img {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .p-instagram__img a {
+    width: 25%;
+  }
+  .p-instagram .insta-link {
+    text-align: center;
+  }
+  .p-instagram .insta-link span {
+    font-size: 34px;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
+  .p-instagram .insta-link span::before {
+    height: 34px;
+    width: 34px;
+  }
+  .p-instagram .insta-link span::after {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .p-recruit {
@@ -1275,10 +1295,9 @@ img {
 }
 
 .c-staff .sns-link {
-  position: absolute;
+  top: 0;
   left: 0;
-  right: 0;
-  bottom: -5px;
+  bottom: 0;
   margin: auto;
 }
 
@@ -1299,6 +1318,17 @@ img {
   background-repeat: no-repeat;
   height: 0.7rem;
   width: 0.7rem;
+}
+
+@media (min-width: 600px) {
+  .c-staff .sns-link span {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .c-staff .sns-link span::before {
+    height: 20px;
+    width: 20px;
+  }
 }
 
 .c-recruit {
@@ -2840,15 +2870,6 @@ Stylesheet: 600px以上のモニタで適用
     margin-bottom: 30px;
     font-size: 0.8rem;
   }
-  .c-staff .sns-link span {
-    font-size: 1rem;
-  }
-  .c-staff .sns-link span::before {
-    height: 1rem;
-    width: 1rem;
-    top: 0px;
-    right: 10px;
-  }
   .c-news-sl .c-container {
     padding: 5vw 10vw 0 10vw;
   }
@@ -3024,25 +3045,6 @@ Stylesheet: 960px以上のモニタで適用
   .p-staff__name__en {
     font-size: 1rem;
   }
-  .p-asides {
-    margin: 0 auto;
-    padding: 0 4vw;
-    display: block;
-  }
-  .p-asides-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .p-asides__block {
-    height: 200px;
-  }
-  .p-asides__link {
-    border-right: 1px solid #161616;
-  }
   .p-recruit {
     padding: 10vw 0;
   }
@@ -3086,15 +3088,6 @@ Stylesheet: 960px以上のモニタで適用
   }
   .c-staff__desc {
     font-size: 1rem;
-  }
-  .c-staff .sns-link span {
-    font-size: 30px;
-  }
-  .c-staff .sns-link span::before {
-    height: 1rem;
-    width: 1rem;
-    top: 0px;
-    right: 10px;
   }
   .c-recruite {
     padding: 10vw 0;
@@ -3188,9 +3181,6 @@ Stylesheet: 1200px以上のモニタで適用
   .p-access {
     padding: 12vw 0 10vw 0;
   }
-  .p-asides {
-    padding: 0 10vw;
-  }
   .p-footer {
     padding: 5vw 0;
   }
@@ -3199,15 +3189,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .c-staff__list {
     margin-top: 7vw;
-  }
-  .c-staff .sns-link span {
-    font-size: 1.2rem;
-  }
-  .c-staff .sns-link span::before {
-    height: 1.2rem;
-    width: 1.2rem;
-    top: 0px;
-    right: 10px;
   }
   .c-recruit {
     padding: 3vw 0 5vw 0;

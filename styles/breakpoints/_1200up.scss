@@ -60,11 +60,6 @@ Stylesheet: 1200px以上のモニタで適用
   padding: 12vw 0 10vw 0;
 }
 
-//.p-asides
-.p-asides {
-  padding: 0 10vw;
-}
-
 //.p-footer
 .p-footer {
   padding: 5vw 0;
@@ -81,19 +76,6 @@ Stylesheet: 1200px以上のモニタで適用
 
   &__list {
     margin-top: 7vw;
-  }
-
-  .sns-link {
-    & span {
-      font-size: 1.2rem;
-
-      &::before {
-        height: 1.2rem;
-        width: 1.2rem;
-        top: 0px;
-        right: 10px;
-      }
-    }
   }
 }
 

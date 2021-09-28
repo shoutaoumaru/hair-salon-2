@@ -252,18 +252,6 @@ Stylesheet: 600px以上のモニタで適用
     font-size: 0.8rem;
   }
 
-  .sns-link {
-    & span {
-      font-size: 1rem;
-
-      &::before {
-        height: 1rem;
-        width: 1rem;
-        top: 0px;
-        right: 10px;
-      }
-    }
-  }
 }
 
 //* * * * * * news-sl-page * * * * * * *
