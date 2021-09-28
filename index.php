@@ -528,40 +528,27 @@
         </div>
       </div>
     </section>
-    <!-- .p-asides -->
-    <aside id="asides" class="p-asides">
-      <div class="p-asides-wrap appear up">
-        <div class="p-asides__block blog item">
-          <a href="https://beauty.hotpepper.jp" target="_blank" class="p-asides__link">
-            <div class="aside__grad"></div>
-            <div class="p-asides__label">Blog</div>
-            <div class="p-asides__text">おすすめのメニューやスタイルをご紹介</div>
-            <div class="p-asides__domain">beauty.hotpepper.jp</div>
-          </a>
+    <!-- .p-instagram -->
+    <section id="instagram" class="p-instagram">
+      <div class="c-container appear up">
+        <h1 class="p-staff__title clip-js left">
+          <span class="num">06</span>
+          <span class="c-title">Instagram</span>
+        </h1>
+        <div class="p-instagram__img item">
+          <?php echo apply_filters('the_content', '[instagram-feed]'); ?>
         </div>
-        <div class="p-asides__block styling item">
-          <a href="https://beauty.hotpepper.jp" target="_blank" class="p-asides__link">
-            <div class="aside__grad"></div>
-            <div class="p-asides__label">styling</div>
-            <div class="p-asides__text">スタイルをご紹介</div>
-            <div class="p-asides__domain">beauty.hotpepper.jp</div>
-          </a>
-        </div>
-        <div class="p-asides__block instagram item">
-          <a href="https://www.instagram.com" target="_blank" class="p-asides__link">
-            <div class="aside__grad"></div>
-            <div class="p-asides__label">Instagram</div>
-            <div class="p-asides__text">日常のスナップ写真を掲載</div>
-            <div class="p-asides__domain">Instagram</div>
-          </a>
+        <div class="insta-link item">
+          <a href="https://www.instagram.com/shouta_oumaru/" class="insta-link-btn" target="_blank">
+            <span>follow us</span></a>
         </div>
       </div>
-    </aside>
+    </section>
     <!-- .p-recruit -->
     <section id="recruit" class="p-recruit">
       <div class="c-container appear up">
         <h2 class="p-recruit__title clip-js left">
-          <span class="num">06</span>
+          <span class="num">07</span>
           <span class="c-title">Recruit</span>
         </h2>
         <h3 class="p-recruit__subtitle item">スタッフ募集</h3>
@@ -582,7 +569,7 @@
     <section id="news" class="p-news">
       <div class="c-container">
         <h2 class="p-news__tit clip-js left">
-          <span class="num">07</span>
+          <span class="num">08</span>
           <span class="c-title">News</span>
         </h2>
         <div class="p-news__wrapper appear up">

@@ -198,25 +198,6 @@ Stylesheet: 960px以上のモニタで適用
   }
 }
 
-//.p-asides
-.p-asides {
-  margin: 0 auto;
-  padding: 0 4vw;
-  display: block;
-
-  &-wrap {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  &__block {
-    height: 200px;
-  }
-
-  &__link {
-    border-right: 1px solid $cBlack;
-  }
-}
 
 //.p-recruit
 .p-recruit {

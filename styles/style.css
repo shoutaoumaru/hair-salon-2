@@ -778,6 +778,50 @@ img {
   }
 }
 
+.insta-link {
+  margin-right: 25px;
+}
+
+.insta-link span {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  padding-right: 15px;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+  color: #fff;
+}
+
+.insta-link span::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  height: 18px;
+  width: 18px;
+  background-image: url(../images/common/icon-insta-wh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.insta-link span::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 8px;
+  width: 8px;
+  background-image: url(../images/common/arrow-wh.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .p-firstview {
   margin: 20vw 5vw 20vw 5vw;
   overflow: hidden;
@@ -1016,69 +1060,23 @@ img {
   left: 0;
 }
 
-.p-asides {
-  width: 100%;
-  height: auto;
-  position: relative;
-  display: block;
-  margin: 80px auto 0;
+.p-instagram #sb_instagram .sb_instagram_header {
+  display: none;
 }
 
-.p-asides__block {
-  width: 100%;
-  height: 140px;
-  background-color: #fff;
-  border-top: 1px solid #727171;
-  border-left: 0;
+.p-instagram #sb_instagram #sbi_images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.p-asides__link {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  color: #727171;
-  overflow: hidden;
-}
-
-.p-asides__link::after {
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-image: url(../images/arrow.svg);
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  position: absolute;
-  right: 35px;
-  top: 18px;
-}
-
-.p-asides__label {
-  position: absolute;
-  font-size: 30px;
-  line-height: 40px;
-  left: 30px;
-  top: 20px;
-  z-index: 1;
-}
-
-.p-asides__text {
-  line-height: 20px;
-  position: absolute;
-  left: 30px;
-  font-size: 14px;
-  bottom: 50px;
-  z-index: 1;
-}
-
-.p-asides__domain {
-  position: absolute;
-  bottom: 25px;
-  left: 30px;
-  line-height: 20px;
-  font-size: 10px;
+.p-instagram #sb_instagram #sbi_images .sbi_item {
+  width: 25% !important;
 }
 
 .p-recruit {
@@ -3024,25 +3022,6 @@ Stylesheet: 960px以上のモニタで適用
   .p-staff__name__en {
     font-size: 1rem;
   }
-  .p-asides {
-    margin: 0 auto;
-    padding: 0 4vw;
-    display: block;
-  }
-  .p-asides-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .p-asides__block {
-    height: 200px;
-  }
-  .p-asides__link {
-    border-right: 1px solid #161616;
-  }
   .p-recruit {
     padding: 10vw 0;
   }
@@ -3191,9 +3170,6 @@ Stylesheet: 1200px以上のモニタで適用
   }
   .p-access {
     padding: 12vw 0 10vw 0;
-  }
-  .p-asides {
-    padding: 0 10vw;
   }
   .p-footer {
     padding: 5vw 0;
